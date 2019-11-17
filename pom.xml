@@ -20,6 +20,7 @@
         <module>rpc</module>
         <module>json</module>
         <module>spi</module>
+        <module>koalas-rpc</module>
     </modules>
 
 

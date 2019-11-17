@@ -11,6 +11,7 @@
         <module name="hashmap" />
         <module name="jdkproxy" />
         <module name="json" />
+        <module name="koalasrpc" />
         <module name="mybatis" />
         <module name="service" />
         <module name="spi" />
@@ -22,7 +23,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="jdkproxy" target="1.5" />
+      <module name="jdkproxy" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="zuul" options="-parameters" />
+      <module name="zuult" options="-parameters" />
+    </option>
   </component>
 </project>
